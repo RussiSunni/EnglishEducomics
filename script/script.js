@@ -1,11 +1,14 @@
-
+$(document).ready(function () {
 
 // Introduction.html
-
-$(document).ready(function () {
     $('#submit').click(function () {
         var username = $('#username').val();
 
+        // assign cookie
+        document.cookie = username;
+        
+
+        // save to db
         url = '../../script/signup.php';
 
         $.ajax({
@@ -16,8 +19,13 @@ $(document).ready(function () {
                 $('#introduction').html('<p>ah yes, it is... ' + username + '</p><h3><a href="this-way.html">Welcome!</a></h3>');
             }
         });
-
     });
+
+// homescreen.html
+
+    $('#currentUser').text(document.cookie);
+
+  
 });
 
 
