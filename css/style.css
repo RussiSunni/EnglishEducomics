@@ -1,0 +1,140 @@
+.fullscreen {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* from Sunshine English School */
+
+html, body {
+  position: relative;
+  height: 100%;
+  }
+
+
+
+
+body {
+  background-color: #d6b47e!important;
+
+}
+
+
+.website-body {
+background: #d2d4e6!important;
+}
+
+
+.dialogue {
+      text-align:center; color:white;
+    }
+      
+.continue {
+      text-align:right
+    }
+
+
+.centerimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+
+.center {
+      display: block;
+      margin-left: auto;
+      margin-right: 180px;
+    }
+
+
+.vocab-list 
+{
+  background-color: brown!important;
+  border: 1px solid white!important;
+  border-radius: 2%;
+  color: pink;
+}
+
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Set the fixed height of the footer here */
+  line-height: 40px; /* Vertically center the text there */
+  background-color: #E8B274;
+  text-align: right;
+  padding-right: 10px;
+  }
+
+
+.syllabus-btn
+{
+  background-color: orangered;
+  color: beige;
+  border: 1px solid black!important;
+}
+
+.exercise-images
+{
+  max-height: 70vh;
+
+}
+
+@media only screen and (max-width: 600px){
+    img {
+      width: 100vw;
+      
+      margin-left:auto;
+      margin-right:auto;
+      
+    }
+          
+    .continue {
+      text-align: auto;
+      margin-bottom: 40px;
+    }
+    
+    
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  
+    .left {	float:left;
+    }				
+  }
+
+
+
+
+/* 
+  
+  .footer-questions {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightcyan;
+    color: black;
+    text-align: center;
+  }
+   */
+
+
