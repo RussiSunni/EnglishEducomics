@@ -1,13 +1,11 @@
 <?php
       
- 
-      $name = $email = "";
-      
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-         $name = test_input($_POST["name"]);
-         $email = test_input($_POST["email"]);
-      }
-      
+      $name = "";
+
+   
+      $name = htmlspecialchars($_GET["username"]);
+
+     
       function test_input($data) {
          $data = trim($data);
          $data = stripslashes($data);
@@ -34,8 +32,8 @@
 
 
      // get the form values
-     $sql = "INSERT INTO users (username, email)
-     VALUES ('".$name."', '".$email."')";
+     $sql = "INSERT INTO users (username)
+     VALUES ('".$name."')";
 
 
 
