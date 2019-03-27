@@ -1,5 +1,26 @@
 
 
+// Introduction.html
+
+$(document).ready(function () {
+    $('#submit').click(function () {
+        var username = $('#username').val();
+
+        url = '../../script/signup.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + username,
+            data: username,
+            success: function () {
+                $('#introduction').html('<p>ah yes, it is... ' + username + '</p><h3><a href="this-way.html">Welcome!</a></h3>');
+            }
+        });
+
+    });
+});
+
+
 
 
 // checking answers in "My Family" section

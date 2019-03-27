@@ -34,30 +34,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
+	<script src="../../script/script.js"></script>
 
 </body>
 
 </html>
 
-<script>
-	$(document).ready(function () {
-		$('#submit').click(function () {
-			var username = $('#username').val();
-
-			url = '../../script/signup.php';
-
-			$.ajax({
-				type: 'POST',
-				url: url + '?username=' + username,
-				data: username,
-				success: function () {
-					$('#introduction').html('<p>ah yes, it is... ' + username + '</p><h3><a href="this-way.html">Welcome!</a></h3>');
-
-
-				}
-			});
-
-		});
-	});
-
-</script>
