@@ -2,6 +2,45 @@ $(document).ready(function () {
 
 
 
+    // Website.html ------------------------
+
+
+    var textArray1 = ["学英语", "выучить английский язык", "تعلم الإنجليز", "Learn English"];
+    var textArray2 = ["与漫画", "с комиксами", "مع كاريكاتير", "with comics"];
+    var index1 = 0;
+    var index2 = 0;
+
+    setInterval(function () {
+
+
+        $("#changeText1").animate({
+            // opacity: 0
+        }, function () {
+            if (textArray1.length > index1) {
+                $(this).text(textArray1[index1]).animate({ opacity: 1 })
+                index1++;
+            }
+            else
+                index1 = 0;
+            
+        });
+        $("#changeText2").animate({
+            // opacity: 0
+        }, function () {
+            if (textArray2.length > index2) {
+                $(this).text(textArray2[index2]).animate({ opacity: 1 })
+                index2++;
+            }
+            else
+                index2 = 0;
+        });
+    }, 2000);
+
+
+
+
+
+
     // Introduction.html -----------------------
 
     // username
@@ -65,6 +104,9 @@ $(document).ready(function () {
             type: 'POST',
             url: url + '?username=' + currentUser + '&familiar=' + familiar
         });
+
+        $('#chooseFamiliar').text('Ah, the mighty ' + familiar + '. Great choice!');
+        $('.disabled').removeClass('disabled');
     });
 
 
@@ -92,9 +134,21 @@ $(document).ready(function () {
     // show on screen
     var familiar = getCookie(cnameFamiliar);
     $('#familiar').text(familiar);
+    
+
+
+   
 
 
 });
+
+
+
+
+
+
+
+
 
 
 
@@ -163,38 +217,6 @@ $("#submit5").click(function (e) {
 
 
 
-
-var textArray1 = ["学英语", "выучить английский язык", "تعلم الإنجليز", "Learn English"];
-var textArray2 = ["与漫画", "с комиксами", "مع كاريكاتير", "with comics"];
-var index1 = 0;
-var index2 = 0;
-
-setInterval(function () {
-    $("#changeText1").animate({
-        opacity: 0
-    }, function () {
-        if (textArray1.length > index1) {
-            $(this).text(textArray1[index1]).animate({ opacity: 1 })
-            index1++;
-        }
-        else
-            index1 = 0;
-    });
-}, 2000);
-
-
-setInterval(function () {
-    $("#changeText2").animate({
-        opacity: 0
-    }, function () {
-        if (textArray2.length > index2) {
-            $(this).text(textArray2[index2]).animate({ opacity: 1 })
-            index2++;
-        }
-        else
-            index2 = 0;
-    });
-}, 2000);
 
 
 

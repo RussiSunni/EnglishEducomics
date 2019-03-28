@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container h-100 d-flex flex-column justify-content-center">
         <div class="row">
 
             <div class="col-lg-5 mt-5">
@@ -20,10 +20,10 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-6 mt-5">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col">
-                        <p class="text-center"><span id="currentUser"></span>, before you proceed, you need to choose
-                            your familiar</p>
+                        <h5 class="text-center"><span id='chooseFamiliar'><span id="currentUser"></span>, before you proceed, you need to choose
+                            your familiar</span></h5>
                     </div>
                 </div>
 
@@ -113,13 +113,17 @@
                 </form>
 
             </div>
+
+            <input id="submitFamiliar" value="choose" type="button" class="btn btn-secondary ml-auto">
+            <a class="btn btn-outline-dark ml-auto disabled" href="../../index.html" role="button">proceed</a>
         </div>
+
+       
+    
     </div>
 
 
-    <input id="submitFamiliar" value="Submit" type="button" class="btn btn-secondary btn-lg">
-    <a class="btn btn-outline-dark mx-auto" href="../../index.html" role="button">proceed</a>
-
+   
     
 
     <div id="footer"></div>
