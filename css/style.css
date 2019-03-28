@@ -26,6 +26,20 @@ html, body {
   }
 
 
+ /* for mobile screens */
+@media (max-width: 576px) {
+
+/*logo image */
+  .navbar-brand img {
+    height: 50px;
+    width: 50px;
+  }
+
+}
+
+
+
+
 
 
 body {
