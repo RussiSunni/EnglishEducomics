@@ -2,6 +2,32 @@ $(document).ready(function () {
 
 
 
+// Admin.html --------------------
+
+    var getStudentsUrl = 'script/getStudents.php';
+
+    $.ajax({
+        type: 'GET',
+        url: getStudentsUrl,
+        success: function (data) {
+            $('#studentList').html(data);
+        }
+    });
+
+
+    var getCoursesUrl = 'script/getCourses.php';
+
+    $.ajax({
+        type: 'GET',
+        url: getCoursesUrl,
+        success: function (data) {
+            $('#courseList').html(data);
+        }
+    });
+
+
+
+
     // Website.html ------------------------
 
 
