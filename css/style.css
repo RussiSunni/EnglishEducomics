@@ -9,13 +9,15 @@
 }
 
 
+@media (min-width: 576px) {
 
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 
 /* from Sunshine English School */
@@ -35,6 +37,10 @@ html, body {
     width: 50px;
   }
 
+  .homescreen-fairy-img {
+    height: 50%;
+    width: 50%;
+  }
 }
 
 
