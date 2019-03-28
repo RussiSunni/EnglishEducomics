@@ -56,9 +56,15 @@ $(document).ready(function () {
         $.ajax({
             type: 'POST',
             url: url + '?username=' + username,
-            data: username,
-            success: function () {
-                $('#introduction').html('<p>ah yes, it is... ' + username + '</p><h3><a href="this-way.html">Welcome!</a></h3>');
+            success: function (data) {
+                if (data.includes("name already exists"))
+                {
+                    $('#introduction').html('<p>ah yes, it is... ' + username + '</p><h3><a href="../../index.html">Welcome!</a></h3>');
+                }
+                else
+                {
+                    $('#introduction').html('<p>ah, a new student. How wonderful.</p><h3><a href="this-way.html">Welcome!</a></h3>');
+                }
             }
         });
     });

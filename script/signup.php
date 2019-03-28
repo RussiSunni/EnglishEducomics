@@ -31,17 +31,33 @@
      echo "Connected successfully";
 
 
-     // get the form values
-     $sql = "INSERT INTO users (username)
-     VALUES ('".$name."')";
 
+    // check if exists already
 
-     if ($conn->query($sql) === TRUE) {
-         echo "New record created successfully";
-     } else {
-         echo "Error: " . $sql . "<br>" . $conn->error;
-     }
+    $sql = "SELECT id FROM users
+            WHERE username = '".$name."'";
+            
+    $result = $conn->query($sql);
 
+    if ($result->num_rows > 0) 
+    {
+        echo "name already exists";
+    } 
+    else 
+    {
+        $sql = "INSERT INTO users (username)
+        VALUES ('".$name."')";
+
+        if ($conn->query($sql) === TRUE) 
+        {
+            echo "New record created successfully";
+        } 
+        else 
+        {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+    }
 
      $conn->close();
 
