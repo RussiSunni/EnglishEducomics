@@ -22,7 +22,7 @@
         </div>
 
         <div class="row mt-2">
-            <a class="btn btn-outline-dark mx-auto" href="future-tense-02.php" role="button">
+            <a class="btn btn-outline-dark mx-auto" href="02.php" role="button">
                    next
             </a>
         </div>

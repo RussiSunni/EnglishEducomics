@@ -34,7 +34,7 @@
 
         <div class="row mt-2" id="q-2">
             <input class="btn btn-outline-info" type="submit" value="Submit" id="submit2"><a
-                class="btn btn-outline-dark ml-auto" href="exercise-03.php" role="button">next</a>
+                class="btn btn-outline-dark ml-auto" href="03.php" role="button">next</a>
         </div>
     </div>
 

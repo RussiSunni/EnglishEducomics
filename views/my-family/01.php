@@ -33,7 +33,7 @@
     </div>
     <div class="row mt-2">
         <input class="btn btn-outline-info" type="submit" value="Submit" id="submit1"><a
-            class="btn btn-outline-dark ml-auto" href="exercise-02.php" role="button">next</a>
+            class="btn btn-outline-dark ml-auto" href="02.php" role="button">next</a>
     </div>
 
  

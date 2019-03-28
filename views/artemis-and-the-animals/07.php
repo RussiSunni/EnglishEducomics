@@ -14,7 +14,7 @@
         </div>
 
         <div class="row mt-2">
-            <a class="btn btn-outline-dark mx-auto" href="animals-game.php" role="button">next</a>
+            <a class="btn btn-outline-dark mx-auto" href="08.php" role="button">next</a>
         </div>
     </div>
 

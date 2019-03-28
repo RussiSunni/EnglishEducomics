@@ -16,7 +16,7 @@
         </div>
 
         <div class="row mt-2">
-            <a class="btn btn-outline-dark mx-auto" href="domestic-vs-wild-02.php" role="button">next</a>
+            <a class="btn btn-outline-dark mx-auto" href="02.php" role="button">next</a>
         </div>
     </div>
 

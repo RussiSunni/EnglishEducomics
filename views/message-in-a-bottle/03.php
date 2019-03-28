@@ -17,7 +17,7 @@ include "../partials/header.php";
     </div>
 
     <div class="row mt-2">
-        <a class="btn btn-outline-dark mx-auto" href="comic.php" role="button">next</a>
+        <a class="btn btn-outline-dark mx-auto" href="01.php" role="button">next</a>
     </div>
 </div>
 
