@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
     // Introduction.html
-    $('#submit').click(function () {
+
+    // username
+    $('#submitUsername').click(function () {
         var username = $('#username').val();
 
         // assign cookie
@@ -22,20 +24,20 @@ $(document).ready(function () {
     });
 
 
+
+
     // homescreen.html
    
+    // get the correct cookie
+
     var cname = 'username';
 
     function getCookie(cname) {
         var name = cname + "=";
-
         var decodedCookie = decodeURIComponent(document.cookie);
-
         var cookieArray = decodedCookie.split(';');
-
         for (var i = 0; i < cookieArray.length; i++) {
             var cookie = cookieArray[i];
-
             while (cookie.charAt(0) == ' ') {
                 cookie = cookie.substring(1);
             }
@@ -46,9 +48,40 @@ $(document).ready(function () {
         return "";
     }
 
+    // show on screen
     var currentUser = getCookie(cname);
 
     $('#currentUser').text(currentUser);
+
+
+
+//familiar
+
+    $('#submitFamiliar').click(function () {
+
+        var familiar = $("input:radio[name=familiar]:checked").val();
+
+        url = '../../script/addFamiliar.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser +'&familiar=' + familiar,
+            data: familiar,
+            success: function () {
+               
+            }
+        });
+
+
+    });
+
+
+
+
+
+
+
+
 
 });
 

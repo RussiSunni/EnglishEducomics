@@ -1,9 +1,9 @@
 <?php
       
-      $name = "";
+      $familiar = "";
 
-   
       $name = htmlspecialchars($_GET["username"]);
+      $familiar = htmlspecialchars($_GET["familiar"]);
 
      
       function test_input($data) {
@@ -32,8 +32,10 @@
 
 
      // get the form values
-     $sql = "INSERT INTO users (username)
-     VALUES ('".$name."')";
+     $sql = "UPDATE users 
+             SET familiar = '".$familiar."'
+             WHERE username = '".$name."'
+     ";
 
 
      if ($conn->query($sql) === TRUE) {
