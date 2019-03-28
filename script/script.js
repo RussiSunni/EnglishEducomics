@@ -1,14 +1,15 @@
 $(document).ready(function () {
 
-    // Introduction.html
+
+
+    // Introduction.html -----------------------
 
     // username
     $('#submitUsername').click(function () {
         var username = $('#username').val();
 
         // assign cookie
-        document.cookie = "username = " + username;
-
+        document.cookie = 'username = ' + username + '; Path=/';
 
         // save to db
         url = '../../script/signup.php';
@@ -26,12 +27,9 @@ $(document).ready(function () {
 
 
 
-    // homescreen.html
-   
-    // get the correct cookie
+    // homescreen.html ----------------
 
-    var cname = 'username';
-
+    // get the 'username' cookie
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
@@ -48,39 +46,52 @@ $(document).ready(function () {
         return "";
     }
 
+    var cnameUsername = 'username';
     // show on screen
-    var currentUser = getCookie(cname);
-
+    var currentUser = getCookie(cnameUsername);
     $('#currentUser').text(currentUser);
 
 
-
-//familiar
+    //familiar
 
     $('#submitFamiliar').click(function () {
-
         var familiar = $("input:radio[name=familiar]:checked").val();
 
-        url = '../../script/addFamiliar.php';
+        // assign cookie
+        document.cookie = 'familiar = ' + familiar + '; Path=/';
 
+        url = '../../script/addFamiliar.php';
         $.ajax({
             type: 'POST',
-            url: url + '?username=' + currentUser +'&familiar=' + familiar,
-            data: familiar,
-            success: function () {
-               
-            }
+            url: url + '?username=' + currentUser + '&familiar=' + familiar
         });
-
-
     });
 
 
 
+    // account.html ---------------------
 
+    // get the 'familiar' cookie
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var cookieArray = decodedCookie.split(';');
+        for (var i = 0; i < cookieArray.length; i++) {
+            var cookie = cookieArray[i];
+            while (cookie.charAt(0) == ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(name) == 0) {
+                return cookie.substring(name.length, cookie.length);
+            }
+        }
+        return "";
+    }
 
-
-
+    var cnameFamiliar = 'familiar';
+    // show on screen
+    var familiar = getCookie(cnameFamiliar);
+    $('#familiar').text(familiar);
 
 
 });
@@ -162,13 +173,13 @@ setInterval(function () {
     $("#changeText1").animate({
         opacity: 0
     }, function () {
-            if (textArray1.length > index1) {
-                $(this).text(textArray1[index1]).animate({ opacity: 1 })
-                index1++;
-            }
-            else
-                index1 = 0;
-        });
+        if (textArray1.length > index1) {
+            $(this).text(textArray1[index1]).animate({ opacity: 1 })
+            index1++;
+        }
+        else
+            index1 = 0;
+    });
 }, 2000);
 
 
@@ -176,13 +187,13 @@ setInterval(function () {
     $("#changeText2").animate({
         opacity: 0
     }, function () {
-            if (textArray2.length > index2) {
-                $(this).text(textArray2[index2]).animate({ opacity: 1 })
-                index2++;
-            }
-            else
-                index2 = 0;
-        });
+        if (textArray2.length > index2) {
+            $(this).text(textArray2[index2]).animate({ opacity: 1 })
+            index2++;
+        }
+        else
+            index2 = 0;
+    });
 }, 2000);
 
 
