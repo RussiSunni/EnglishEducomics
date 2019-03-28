@@ -31,7 +31,11 @@
    
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<li class='list-group-item'>".$row["name"]."</li>";
+        
+        $name = $row["name"];
+        $folder = str_replace(' ', '-', $name);
+
+        echo "<li class='list-group-item'><a href='views/".$folder."/01.php'>".$row["name"]."</a></li>";
     }
    
     } else {

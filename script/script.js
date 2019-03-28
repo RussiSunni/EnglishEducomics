@@ -152,13 +152,13 @@ $(document).ready(function () {
     $('#addCourse1').click(function () {
        
         // save to db
-        url = '/script/addCourse.php';
+        url = '/script/addUserCourse.php';
 
         $.ajax({
             type: 'POST',
             url: url + '?username=' + currentUser + '&courseId=' + 1,
             success: function (data) {
-               
+                window.location.reload();
             }
         });
     });
@@ -167,13 +167,13 @@ $(document).ready(function () {
     $('#addCourse2').click(function () {
        
         // save to db
-        url = '/script/addCourse.php';
+        url = '/script/addUserCourse.php';
 
         $.ajax({
             type: 'POST',
             url: url + '?username=' + currentUser + '&courseId=' + 2,
             success: function (data) {
-               
+                window.location.reload();
             }
         });
     });
@@ -182,13 +182,13 @@ $(document).ready(function () {
     $('#addCourse3').click(function () {
        
         // save to db
-        url = '/script/addCourse.php';
+        url = '/script/addUserCourse.php';
 
         $.ajax({
             type: 'POST',
             url: url + '?username=' + currentUser + '&courseId=' + 3,
             success: function (data) {
-               
+                window.location.reload();
             }
         });
     });
@@ -197,13 +197,13 @@ $(document).ready(function () {
     $('#addCourse4').click(function () {
        
         // save to db
-        url = '/script/addCourse.php';
+        url = '/script/addUserCourse.php';
 
         $.ajax({
             type: 'POST',
             url: url + '?username=' + currentUser + '&courseId=' + 4,
             success: function (data) {
-               
+                window.location.reload();
             }
         });
     });
