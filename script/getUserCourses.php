@@ -1,5 +1,9 @@
 <?php
 
+    $name = "";
+
+    $name = htmlspecialchars($_GET["username"]);
+
     // connect to db
     $servername = "localhost";
     $username = "root";
@@ -14,18 +18,22 @@
     } 
 
     
-    $sql = "SELECT id, name, category 
-            FROM courses";
+    $sql = "SELECT c.name, c.category 
+            FROM usercourses as uc
+            JOIN courses as c ON uc.courseid = c.id
+            WHERE userid = (SELECT id
+            FROM users
+            WHERE username = '".$name."')";
 
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-    echo "<table class='table'><tr><th>ID</th><th>Name</th><th>Category</th></tr>";
+   
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["category"]."</td>";
+        echo "<li class='list-group-item'>".$row["name"]."</li>";
     }
-    echo "</table>";
+   
     } else {
     echo "0 results";
     }

@@ -143,6 +143,106 @@ $(document).ready(function () {
 
 
 
+
+    // index.html ---------------------
+    // add course
+
+    // need to remove duplication
+
+    $('#addCourse1').click(function () {
+       
+        // save to db
+        url = '/script/addCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 1,
+            success: function (data) {
+               
+            }
+        });
+    });
+
+
+    $('#addCourse2').click(function () {
+       
+        // save to db
+        url = '/script/addCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 2,
+            success: function (data) {
+               
+            }
+        });
+    });
+
+
+    $('#addCourse3').click(function () {
+       
+        // save to db
+        url = '/script/addCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 3,
+            success: function (data) {
+               
+            }
+        });
+    });
+
+
+    $('#addCourse4').click(function () {
+       
+        // save to db
+        url = '/script/addCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 4,
+            success: function (data) {
+               
+            }
+        });
+    });
+
+
+    // show user courses
+
+    var getUserCoursesUrl = 'script/getUserCourses.php';
+
+    $.ajax({
+        type: 'GET',
+        url: getUserCoursesUrl + '?username=' + currentUser,
+        success: function (data) {
+            $('#userCourseList').html(data);
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // account.html ---------------------
 
     // get the 'familiar' cookie
