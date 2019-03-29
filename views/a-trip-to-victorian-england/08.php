@@ -1,3 +1,4 @@
+
 <?php
     include "../partials/header.php";
 ?>
@@ -10,13 +11,13 @@
 
         <div class="row mt-3">
             <div class="col-md-5">
-                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-03.png" class="img-fluid">
+                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-01.png" class="img-fluid">
             </div>
             <div class="col-md-2 d-flex align-items-center justify-content-center mt-3 mb-3">
                     <img src="../../images/a-trip-to-victorian-england/for-example.svg">
             </div>
             <div class="col-md-5">
-                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-04.png" class="img-fluid">
+                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-02.png" class="img-fluid">
             </div>
         </div>
 
@@ -25,7 +26,6 @@
         </div>
     </div>
 
-    
 <?php
     include "../partials/footer.php";
 ?>

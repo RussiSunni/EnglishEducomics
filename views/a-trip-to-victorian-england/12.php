@@ -9,19 +9,14 @@
         </div>
 
         <div class="row mt-3">
-            <div class="col-md-5">
-                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-09.png" class="img-fluid">
+            <div class="col">
+                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-08.png" class="img-fluid mx-auto d-block">
             </div>
-            <div class="col-md-2 d-flex align-items-center justify-content-center mt-3 mb-3">
-                    <img src="../../images/a-trip-to-victorian-england/for-example.svg">
-            </div>
-            <div class="col-md-5">
-                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-10.png" class="img-fluid">
-            </div>
+
         </div>
 
         <div class="row mt-2">
-            <a class="btn btn-outline-dark mx-auto" href="01.php" role="button">next</a>
+            <a class="btn btn-outline-dark mx-auto" href="13.php" role="button">next</a>
         </div>
 
     </div>

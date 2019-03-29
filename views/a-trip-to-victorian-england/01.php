@@ -4,33 +4,18 @@
 
 
     <div class="main container">
-       
         <div class="row justify-content-center mt-3">
-            <img src="../../images/a-trip-to-victorian-england/future-tense-title.svg" class="img-fluid">
+            <img src="../../images/my-family/my-family.svg" class="img-fluid">
         </div>
 
-        <div class="row mt-3">
-            <div class="col-md-5">
-                <img src="../../images/a-trip-to-victorian-england/future-tense-01.png" class="img-fluid">
-            </div>
-            <div class="col-md-2 d-flex align-items-center justify-content-center mt-3 mb-3">
-                    <img src="../../images/a-trip-to-victorian-england/for-example.svg">
-            </div>
-            <div class="col-md-5">
-                <img src="../../images/a-trip-to-victorian-england/future-tense-02.png" class="img-fluid">
-            </div>
-        </div>
+        <h3 class="mb-3">Welcome to "A Trip to Victorian England"</h3>
+        <p><strong>objectives:</strong> learn grammar</p>
 
-        <div class="row mt-2">
-            <a class="btn btn-outline-dark mx-auto" href="02.php" role="button">
-                   next
-            </a>
-        </div>
+       <a class="btn btn-outline-dark ml-auto" href="02.php" role="button"> to being, click here</a>
     </div>
 
-
+ 
 <?php
     include "../partials/footer.php";
 ?>
-
 

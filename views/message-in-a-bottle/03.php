@@ -12,12 +12,12 @@ include "../partials/header.php";
 
     <div class="row mt-3">
         <div class="col">
-            <img src="../../images/message-in-a-bottle/lesson-page-3.jpg" class="img-fluid mx-auto d-block">
+            <img src="../../images/message-in-a-bottle/lesson-page-2.jpg" class="img-fluid mx-auto d-block">
         </div>
     </div>
 
     <div class="row mt-2">
-        <a class="btn btn-outline-dark mx-auto" href="01.php" role="button">next</a>
+        <a class="btn btn-outline-dark mx-auto" href="04.php" role="button">next</a>
     </div>
 </div>
 

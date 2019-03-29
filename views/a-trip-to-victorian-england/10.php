@@ -9,8 +9,14 @@
         </div>
 
         <div class="row mt-3">
-            <div class="col">
-                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-07.png" class="img-fluid mx-auto d-block">
+            <div class="col-md-5">
+                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-05.png" class="img-fluid">
+            </div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center">
+                <p>you can write them here -></p>
+            </div>
+            <div class="col-md-5">
+                <img src="../../images/a-trip-to-victorian-england/future-simple-tense-06.png" class="img-fluid">
             </div>
         </div>
 

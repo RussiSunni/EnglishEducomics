@@ -8,10 +8,9 @@
             <img src="../../images/my-family/my-family.svg" class="img-fluid">
         </div>
 
-        <h3 class="mb-3">Welcome to "My family"</h3>
-        <p><strong>objectives:</strong> learn vocabulary about the family</p>
+    end
 
-       <a class="btn btn-outline-dark ml-auto" href="02.php" role="button"> to being, click here</a>
+        
     </div>
 
  
