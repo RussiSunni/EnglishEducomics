@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="93.933968mm"
+   width="55.073296mm"
    height="7.0624456mm"
-   viewBox="0 0 93.933948 7.0624455"
+   viewBox="0 0 55.073284 7.0624455"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="vocabulary-message-in-a-bottle--title.svg">
+   sodipodi:docname="vocabulary-message-in-a-bottle-title.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="127.98689"
-     inkscape:cy="89.821104"
+     inkscape:zoom="3.959798"
+     inkscape:cx="132.01635"
+     inkscape:cy="10.251713"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +56,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-44.670091,-90.576766)">
+     transform="translate(-44.807894,-90.576766)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -67,7 +67,7 @@
          id="tspan10"
          x="44.601189"
          y="95.916664"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic';stroke-width:0.26458332">Vocabulary - Message in a Bottle</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic';stroke-width:0.26458332">Message in a Bottle</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot14"

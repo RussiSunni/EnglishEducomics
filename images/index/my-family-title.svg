@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="109.96745mm"
-   height="7.0624456mm"
-   viewBox="0 0 109.96743 7.0624455"
+   width="29.094244mm"
+   height="6.5052218mm"
+   viewBox="0 0 29.094238 6.5052217"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="vocabulary-artemis-and-the-animals-title.svg">
+   sodipodi:docname="vocabulary-my-family-title.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="6.2011757"
-     inkscape:cy="89.821103"
+     inkscape:zoom="2.8"
+     inkscape:cx="136.47922"
+     inkscape:cy="4.1608297"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,7 +56,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-44.670091,-90.576766)">
+     transform="translate(-45.073911,-90.886053)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -67,7 +67,7 @@
          id="tspan10"
          x="44.601189"
          y="95.916664"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic';stroke-width:0.26458332">Vocabulary - Artemis and the Animals</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:'Ink Free';-inkscape-font-specification:'Ink Free';stroke-width:0.26458332">My Family</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot14"
