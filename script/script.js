@@ -217,7 +217,14 @@ $(document).ready(function () {
         type: 'GET',
         url: getUserCoursesUrl + '?username=' + currentUser,
         success: function (data) {
-            $('#userCourseList').html(data);
+          
+            var obj = JSON.parse(data);
+          
+            for (i=0; i < obj.usercourses.length; i++)
+            {
+                $('#userCourseList').append('<a href="views/' + obj.usercourses[i] + '/01.php">' + obj.usercourses[i] + '</a><br>');
+            }
+
         }
     });
 

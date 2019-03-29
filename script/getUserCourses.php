@@ -28,18 +28,28 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-   
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        
-        $name = $row["name"];
-        $folder = str_replace(' ', '-', $name);
 
-        echo "<li class='list-group-item'><a href='views/".$folder."/01.php'>".$row["name"]."</a></li>";
-    }
-   
-    } else {
-    echo "0 results";
+        $courseJson = '{"usercourses": [';
+        
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            
+            $name = $row["name"];
+            $folder = str_replace(' ', '-', $name);
+            // echo "<li class='list-group-item'><a href='views/".$folder."/01.php'>".$row["name"]."</a></li>";
+            $courseJson .= json_encode($folder);
+            $courseJson .= ', ';
+            
+        }
+
+        $courseJson = preg_replace("/\, $/","",$courseJson);
+
+        $courseJson .= ']}';
+        echo $courseJson;
+    } 
+    else 
+    {
+        echo "0 results";
     }
 
 
