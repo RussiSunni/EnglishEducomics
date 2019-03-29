@@ -2,8 +2,8 @@
     include "../partials/header.php";
 ?>
 
-
-    <div class="main container">
+<div class="content">
+    <div class="container">
        
         <div class="row justify-content-center mt-3">
             <img src="../../images/a-trip-to-victorian-england/future-tense-title.svg" class="img-fluid">
@@ -27,7 +27,7 @@
             </a>
         </div>
     </div>
-
+</div>
 
 <?php
     include "../partials/footer.php";

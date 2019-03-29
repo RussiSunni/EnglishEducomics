@@ -3,8 +3,8 @@
     include "../partials/header.php";
 ?>
 
-
-    <div class="main container">
+<div class="content">
+    <div class="container">
         <div class="row justify-content-center mt-3">
             <img src="../../images/artemis-and-the-animals/domestic-and-wild-animals.svg" class="img-fluid">
         </div>
@@ -19,7 +19,7 @@
             <a class="btn btn-outline-dark mx-auto" href="03.php" role="button">next</a>
         </div>
     </div>
-
+</div>
     
 <?php
     include "../partials/footer.php";

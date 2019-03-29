@@ -1,8 +1,6 @@
 
     <footer class="footer">
-        <div class="container">
-            <p class="text-muted float-right">&copy;ecomap</p>
-        </div>
+        <p class="text-muted">&copy;ecomap</p>
     </footer>
 
 
