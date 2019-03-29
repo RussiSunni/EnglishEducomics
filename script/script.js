@@ -276,7 +276,7 @@ $(document).ready(function () {
     $('#finishedC1').click(function () {
         
         // save to db
-        url = '/script/UpdateUserCourse.php';
+        url = '/script/updateUserCourse.php';
 
         $.ajax({
             type: 'POST',
@@ -289,7 +289,7 @@ $(document).ready(function () {
     $('#finishedC2').click(function () {
         
         // save to db
-        url = '/script/UpdateUserCourse.php';
+        url = '/script/updateUserCourse.php';
 
         $.ajax({
             type: 'POST',
@@ -302,7 +302,7 @@ $(document).ready(function () {
     $('#finishedC3').click(function () {
         
         // save to db
-        url = '/script/UpdateUserCourse.php';
+        url = '/script/updateUserCourse.php';
 
         $.ajax({
             type: 'POST',
@@ -316,7 +316,7 @@ $(document).ready(function () {
     $('#finishedC4').click(function () {
         
         // save to db
-        url = '/script/UpdateUserCourse.php';
+        url = '/script/updateUserCourse.php';
 
         $.ajax({
             type: 'POST',
