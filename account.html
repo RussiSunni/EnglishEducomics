@@ -58,8 +58,16 @@
                 <p><strong>name:</strong> <span id="currentUser"></span></p>
                 <p><strong>familiar:</strong> <span id="familiar"></span></p>
                 <p><strong>your current courses:</strong></p>
-                <p id="userCourseList"></p>
-                <p><strong>your completed courses:</strong></p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Completed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userCourseList"></tbody>
+                </table>
+
             </div>
 
         </div>
@@ -77,5 +85,3 @@
 </body>
 
 </html>
-
-

@@ -1,7 +1,5 @@
 <?php
       
-      $course = "";
-
       $name = htmlspecialchars($_GET["username"]);
       $courseId = htmlspecialchars($_GET["courseId"]);
 

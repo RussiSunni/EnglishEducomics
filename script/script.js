@@ -187,14 +187,17 @@ $(document).ready(function () {
         success: function (data) {
           
             var obj = JSON.parse(data);
-          
+
             for (i=0; i < obj.usercourses.length; i++)
             {
-                $('#userCourseList').append('<a href="views/' + obj.usercourses[i] + '/01.php">' + obj.usercourses[i] + '</a><br>');
+                $('#userCourseList').append('<tr><td><a href="views/' + obj.usercourses[i].name + '/01.php">' + obj.usercourses[i].name + '</a></td><td>' + obj.usercourses[i].completed + '<td/></tr>');
             }
 
         }
     });
+
+
+
 
 
     // Admin.html --------------------
@@ -263,7 +266,90 @@ $(document).ready(function () {
     $('#familiar').text(familiar);
     
 
+
+
+    // View folder -----------------------------------
+
+    // recording when a course has been completed
+
+
+    $('#finishedC1').click(function () {
+        
+        // save to db
+        url = '/script/UpdateUserCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 1,
+            success: function (data) {
+            }
+        });
+    });
+
+    $('#finishedC2').click(function () {
+        
+        // save to db
+        url = '/script/UpdateUserCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 2,
+            success: function (data) {
+            }
+        });
+    });
+
+    $('#finishedC3').click(function () {
+        
+        // save to db
+        url = '/script/UpdateUserCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 3,
+            success: function (data) {
+                
+            }
+        });
+    });
+
+    $('#finishedC4').click(function () {
+        
+        // save to db
+        url = '/script/UpdateUserCourse.php';
+
+        $.ajax({
+            type: 'POST',
+            url: url + '?username=' + currentUser + '&courseId=' + 4,
+            success: function (data) {
+                
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

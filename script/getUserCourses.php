@@ -18,7 +18,7 @@
     } 
 
     
-    $sql = "SELECT c.name, c.category 
+    $sql = "SELECT c.name, completed 
             FROM usercourses as uc
             JOIN courses as c ON uc.courseid = c.id
             WHERE userid = (SELECT id
@@ -29,18 +29,20 @@
 
     if ($result->num_rows > 0) {
 
-        $courseJson = '{"usercourses": [';
+        $userCourse = '{"usercourses": [';
         
         // output data of each row
         while($row = $result->fetch_assoc()) {
             $name = $row["name"];
+            $completed = $row["completed"];
             $folder = str_replace(' ', '-', $name);
-            $courseJson .= json_encode($folder);
-            $courseJson .= ', ';
+
+            $userCourse .= '{"name": "' . $folder . '", "completed": "'. $completed .'"}';
+            $userCourse .= ', ';
         }
-        $courseJson = preg_replace("/\, $/","",$courseJson);
-        $courseJson .= ']}';
-        echo $courseJson;
+        $userCourse = preg_replace("/\, $/","",$userCourse);
+        $userCourse .= ']}';
+        echo $userCourse;
     } 
     else 
     {
