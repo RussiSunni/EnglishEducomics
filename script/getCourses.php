@@ -20,17 +20,35 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-    echo "<table class='table'><tr><th>ID</th><th>Name</th><th>Category</th></tr>";
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["id"]."</td><td>".$row["name"]."</td><td>".$row["category"]."</td>";
-    }
-    echo "</table>";
-    } else {
-    echo "0 results";
-    }
 
+        $courses = '{"courses": [';
+    
+        // output data of each row
+        while($row = $result->fetch_assoc()) 
+        {
+            $id = $row["id"];
+            $name = $row["name"];
+            $category = $row["category"];
+            $courses .=  '{"id": "' .  $id . '", "name": "' . $name . '", "category": "' . $category . '"}, ';
+        }
 
+        $courses = preg_replace("/\, $/","",$courses);
+        $courses .= ']}';
+        echo $courses;
+    } 
+    else 
+    {
+        echo "0 results";
+    }
 
     $conn->close();
 ?>
+
+   
+          
+         
+           
+         
+   
+
+    

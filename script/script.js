@@ -1,33 +1,5 @@
 $(document).ready(function () {
 
-
-
-// Admin.html --------------------
-
-    var getStudentsUrl = 'script/getStudents.php';
-
-    $.ajax({
-        type: 'GET',
-        url: getStudentsUrl,
-        success: function (data) {
-            $('#studentList').html(data);
-        }
-    });
-
-
-    var getCoursesUrl = 'script/getCourses.php';
-
-    $.ajax({
-        type: 'GET',
-        url: getCoursesUrl,
-        success: function (data) {
-            $('#courseList').html(data);
-        }
-    });
-
-
-
-
     // Website.html ------------------------
 
 
@@ -64,9 +36,6 @@ $(document).ready(function () {
 
 
 
-
-
-
     // Introduction.html -----------------------
 
     // username
@@ -94,7 +63,6 @@ $(document).ready(function () {
             }
         });
     });
-
 
 
 
@@ -209,7 +177,7 @@ $(document).ready(function () {
     });
 
 
-    // show user courses
+    // show user courses - index.html and account.html
 
     var getUserCoursesUrl = 'script/getUserCourses.php';
 
@@ -229,24 +197,43 @@ $(document).ready(function () {
     });
 
 
+    // Admin.html --------------------
 
 
+    // get students
+    var getStudentsUrl = 'script/getStudents.php';
+
+    $.ajax({
+        type: 'GET',
+        url: getStudentsUrl,
+        success: function (data) {
+
+            var obj = JSON.parse(data);
+
+            for (i=0; i < obj.students.length; i++)
+            {
+                $('#studentList').append(obj.students[i].username + ' ' + obj.students[i].familiar + '<br>');
+            }
+        }
+    });
 
 
+    // get courses
+    var getCoursesUrl = 'script/getCourses.php';
 
+    $.ajax({
+        type: 'GET',
+        url: getCoursesUrl,
+        success: function (data) {
 
+            var obj = JSON.parse(data);
 
-
-
-
-
-
-
-
-
-
-
-
+            for (i=0; i < obj.courses.length; i++)
+            {
+                $('#courseList').append(obj.courses[i].name + ' ' + obj.courses[i].category + '<br>');
+            }
+        }
+    });
 
 
 
@@ -275,20 +262,7 @@ $(document).ready(function () {
     $('#familiar').text(familiar);
     
 
-
-   
-
-
 });
-
-
-
-
-
-
-
-
-
 
 
 
@@ -340,19 +314,6 @@ $("#submit5").click(function (e) {
 });
 
 
-
-// text transition on website page
-
-
-// $('#website-intro-line1').animate({'opacity': 0}, 3000, function () {
-//     $(this).text('学英语');
-// }).animate({'opacity': 1}, 3000);
-
-
-
-// $('#website-intro-line2').animate({'opacity': 0}, 3000, function () {
-//     $(this).text('与漫画');
-// }).animate({'opacity': 1}, 3000);
 
 
 

@@ -20,20 +20,24 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        echo "<table class='table'><tr><th>ID</th><th>Name</th><th>Familiar</th></tr>";
+
+        $students = '{"students": [';
+       
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>".$row["id"]."</td><td>".$row["username"]."</td><td>".$row["familiar"]."</td>";
+            $id = $row["id"];
+            $username = $row["username"];
+            $familiar = $row["familiar"];
+            $students .=  '{"id": "' .  $id . '", "username": "' . $username . '", "familiar": "' . $familiar . '"}, ';
         }
-        echo "</table>";
+
+        $students = preg_replace("/\, $/","",$students);
+        $students .= ']}';
+        echo $students;
+
     } else {
         echo "0 results";
     }
-
-
-
-
-
 
 
     $conn->close();
