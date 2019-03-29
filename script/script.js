@@ -212,7 +212,8 @@ $(document).ready(function () {
 
             for (i=0; i < obj.students.length; i++)
             {
-                $('#studentList').append(obj.students[i].username + ' ' + obj.students[i].familiar + '<br>');
+                $('#studentList').append('<tr><td>' + obj.students[i].username + '</td></tr>');
+             
             }
         }
     });
@@ -230,7 +231,7 @@ $(document).ready(function () {
 
             for (i=0; i < obj.courses.length; i++)
             {
-                $('#courseList').append(obj.courses[i].name + ' ' + obj.courses[i].category + '<br>');
+                $('#courseList').append('<tr><td>' + obj.courses[i].name + '</td><td>' + obj.courses[i].category + '</td></tr>');
             }
         }
     });
